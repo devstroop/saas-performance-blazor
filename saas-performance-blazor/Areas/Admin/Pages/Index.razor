@@ -1,0 +1,14 @@
+﻿@page "/Admin"
+@inject NavigationManager NavManager
+
+<div class="container">
+    <h1>Please wait</h1>
+    <p>Redirecting to Dashboard</p>
+</div>
+
+@code {
+    protected override void OnInitialized()
+    {
+        NavManager.NavigateTo("/Admin/Dashboard");
+    }
+}
